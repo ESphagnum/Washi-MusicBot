@@ -1,7 +1,7 @@
 # Music config.py
 import os
 
-language = os.getenv("Lang")
+language = os.getenv("LANG")
 
 SETTINGS = {
     "command_role": 1061998983158964285,
