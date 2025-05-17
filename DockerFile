@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 FROM python:3.11-slim
 
 WORKDIR .
@@ -7,4 +8,15 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+=======
+FROM python:3.11-slim
+
+WORKDIR .
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+>>>>>>> f5fbfd3e49063c9d0e81ccbbbd797ae91b63a117
 CMD ["python", "main.py"]
